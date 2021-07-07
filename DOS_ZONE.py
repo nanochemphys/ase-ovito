@@ -1,6 +1,6 @@
 from math import degrees, atan, sqrt
 
-f = open('dos_opj.txt', 'r')
+f = open('dos_opj.txt', 'r') ## open dos-file witn columns: 1 - energy, 2 - s-density of state, 3 - p-density of state, 4 - d-density of state, 5 - summary density of state
 lines = f.readlines()
 e = []
 s = []
