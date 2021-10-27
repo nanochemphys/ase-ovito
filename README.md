@@ -44,6 +44,7 @@ The general script algorithm consists of the following blocks:
 3. Taking into account the neighbor list, electron densities are calculated for each surface atom.
 The MEAM model was described in the text of the paper doi:10.1016/j.susc.2003.12.043.
 
+
 2. Supporting scripts
 
 2.1. revcon_xyz.py
