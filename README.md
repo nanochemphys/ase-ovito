@@ -25,9 +25,9 @@ E_i=1/N*∑(E_ij) , where E_ij – the energy of a pair of i- and j- atoms, sele
 The script calculates the electron density of the selected atom in the immediate environment in the Gupta, Sutton-Chen, Finnis-Sinclair potentials.
 The output file name_of_output.xyz is a list of surface atoms with their symbols and Cartesian coordinates given in the first four columns. In the fifth, the number of atoms from the nearest environment of the surface atom is given. The sixth, seventh and eighth columns show the values of the electron density of atoms in the Finnis-Sinclair, Sutton-Chen and Gupta potentials, respectively.
 The general algorithm consists of the following blocks:
-1. The search for surface atoms is carried out using the tools of the OVITO program, the cutoff radius is 3.1 A
-2. For each found surface atom the nearest environment is constructed using the ASE tools, the radius of determining the nearest environment is 2.3 * the covalent radius of the atom.
-3. Taking into account the nearest environment, electron densities are calculated for each surface atom.
+1) The search for surface atoms is carried out using the tools of the OVITO program, the cutoff radius is 3.1 A
+2) For each found surface atom the nearest environment is constructed using the ASE tools, the radius of determining the nearest environment is 2.3 * the covalent radius of the atom.
+3) Taking into account the nearest environment, electron densities are calculated for each surface atom.
 The electron densities at the indicated potentials are calculated as follows:
 - Gupta potential: https://doi.org/10.1080/10420150108211842
 - Sutton-Chen potential: https://doi.org/10.1016/j.jpcs.2015.03.008
@@ -37,9 +37,9 @@ The electron densities at the indicated potentials are calculated as follows:
 Meam.py calculates the electron density of the selected atom in the MEAM model.
 The output file name_of_output.xyz is a list of surface atoms, in which their symbols and Cartesian coordinates are given in the first four columns. In the fifth column, the number of the nearest neighbor atoms of the surface atom is given. The sixth, seventh and eighth columns show the values of the electron density of atoms in the MEAM model in various approximations.
 The general script algorithm consists of the following blocks:
-1. The search for surface atoms is carried out using the tools of the OVITO program ({method Alpha-shape}) with probe sphere radius 3.1 Å.
-2. For each surface atom the neighbor list is constructed using the ASE tools, the radius of determining the neighbor atoms is 2.3 * the covalent radius of the atom.
-3. Taking into account the neighbor list, electron densities are calculated for each surface atom.
+1) The search for surface atoms is carried out using the tools of the OVITO program ({method Alpha-shape}) with probe sphere radius 3.1 Å.
+2) For each surface atom the neighbor list is constructed using the ASE tools, the radius of determining the neighbor atoms is 2.3 * the covalent radius of the atom.
+3) Taking into account the neighbor list, electron densities are calculated for each surface atom.
 The MEAM model was described in the text of the paper doi:10.1016/j.susc.2003.12.043.
 
 4. revcon_xyz.py
