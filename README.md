@@ -14,7 +14,7 @@ Sergey V. Doronin, Nadezhda V. Dokhlikova, Maxim V. Grishin Descriptor of cataly
 
 1. Description of scripts
 
-3.1. surface_energy.py
+1.1. surface_energy.py
 The calculation of the surface energy of the selected atom in the nearest environment is carried out in the potential EMT
 The output file name_of_file.xyz is a list of surface atoms with their symbols and coordinates given in the first four columns. The fifth shows the number of atoms from the nearest environment of the surface atom. The sixth and seventh columns show the surface energy and its value weighted by the maximum coordination number for each corresponding surface atom.
 The general algorithm can be broken down into several main blocks:
