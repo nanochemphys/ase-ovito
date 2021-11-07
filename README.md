@@ -46,7 +46,7 @@ The MEAM model was described in the text of the paper doi:10.1016/j.susc.2003.12
 Script converts the REVCON file created in the DL_POLY molecular modeling software package to the xyz format. The output file is written as cluster.xyz
 
 5. surface_ovito.py
-Surface_ovito.py is used to search for surface atoms of cluster using the Alpha-shape method with probe sphere radius equal to 4 and smoothing level equal to 8 integrated into the OVITO program. The script processes the file name_of_input.xyz with the atomic structure of the cluster and creates two output files clus-ter_tags.xyz with all the atoms of the cluster being processed, containing an additional column of tags, where 1 is an atom on the cluster surface, 0 is an atom in the volume of the cluster, and cluster_surf.xyz containing only surface atoms.
+Surface_ovito.py is used to search for surface atoms of cluster using the Alpha-shape method with probe sphere radius equal to 3.1 integrated into the OVITO program. The script processes the file name_of_input.xyz with the atomic structure of the cluster and creates two output files clus-ter_tags.xyz with all the atoms of the cluster being processed, containing an additional column of tags, where 1 is an atom on the cluster surface, 0 is an atom in the volume of the cluster, and cluster_surf.xyz containing only surface atoms.
 
 6. dos_zone.py
 The script calculates the characteristics of the density of states of atoms, center, width and population based on DOS data.
